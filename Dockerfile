@@ -4,6 +4,8 @@ MAINTAINER architecture@datiobd.com
 
 ENV API_HTTP_PORT ${API_HTTP_PORT:-7575}
 
+ENV KAFKA_BOOTSTRAP_SERVERS $KAFKA_BOOTSTRAP_SERVERS
+
 #Install and update functionality
 RUN apt-get update
 RUN apt-get install wget
